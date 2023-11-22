@@ -47,7 +47,7 @@ def get_data(response):
 def message(data, city):
     return (f"Погода в {city.capitalize()}:\n"
             f"{data['description'].capitalize()}\n"
-            f"Температура: {data['temp']}C,"
+            f"Температура: {data['temp']}C, "
             f"ощущается как {data['feels']}C\n"
             f"Скорость ветра: {data['wind']} м/с\n"
             f"Давление: {data['pressure']} мм р.с.")
